@@ -3,7 +3,7 @@ const cors = require('cors');
 const app = express();
 const port = 5000;
 const mongoDB=require ("./db");
- mongoDB(); 
+ mongoDB();    
 /* app.get('/', (req, res) => {
   res.send('Hello World!')
 }) */
