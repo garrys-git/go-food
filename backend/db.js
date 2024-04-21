@@ -16,7 +16,7 @@ const mongoDB = () => {
         }
       )
       .then(() => {
-        console.log("Connection successful");
+        console.log("Connection successful");  
         const fetched_data = mongoose.connection.db.collection("food_items");
         fetched_data
           .find({})

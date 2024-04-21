@@ -6,7 +6,7 @@ import Card from "../components/Card";
 function Home() {
   const [foodCat, setFoodCat] = useState([]);
   const [foodItem, setFoodItem] = useState([]);
-  const [search,setSearch]=useState("");
+  const [search,setSearch]=useState("");   
 
   const loaddata = async () => {
     let response = await fetch("http://localhost:5000/api/foodData", {
