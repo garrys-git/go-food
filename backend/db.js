@@ -16,14 +16,17 @@ const mongoDB = () => {
         }
       )
       .then(() => {
-        console.log("Connection successful");  
+        console.log("Connection successful");
         const fetched_data = mongoose.connection.db.collection("food_items");
+        //console.log(fetched_data);
+
         fetched_data
           .find({})
           .toArray()
           .then((data) => {
             const foodCategory =
               mongoose.connection.db.collection("foodCategory");
+
             foodCategory
               .find({})
               .toArray()
